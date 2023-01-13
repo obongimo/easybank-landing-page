@@ -1,3 +1,11 @@
+main header .header-text a, nav a {
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 25px;
+  background-image: linear-gradient(to right, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,16 +15,14 @@ body {
   font-family: "Public Sans", sans-serif;
 }
 
-div.container {
-  width: 1440px;
-  padding-left: 25px;
-}
-
 nav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem;
   font-size: 14px;
+  position: relative;
+  z-index: 1;
 }
 nav ul {
   display: flex;
@@ -26,10 +32,34 @@ nav ul li {
   margin-right: 1.5rem;
   color: hsl(233deg, 8%, 62%);
 }
-nav a {
-  border-radius: 25px;
-  text-decoration: none;
-  color: white;
-  padding: 10px 25px;
-  background-image: linear-gradient(to right, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
+main {
+  background-color: hsl(220deg, 16%, 96%);
+}
+main header {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+main header div {
+  width: 50%;
+}
+main header .header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+main header .header-text a {
+  text-align: left;
+}
+main header .header-img {
+  background-image: url("images/bg-intro-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: -50px -260px;
+  position: relative;
+  overflow-x: clip;
+}
+main header .header-img img {
+  position: absolute;
+  top: -220px;
 }/*# sourceMappingURL=style.css.map */
